@@ -1,35 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect } from 'react';
+import styles from './App.module.css'
+import StateManagementList from './StateMangementList';
+import { AppProps } from './types/AppProps';
 
-function App() {
-  const [count, setCount] = useState(0)
+
+const App: React.FC<AppProps> = ({theme, setTheme}) => {
+
+  useEffect(() => {
+    const modeValue = localStorage.getItem('theme')
+    if(modeValue === "dark"){
+      setTheme("dark")
+    }
+  })
+
+
+  const toggleTheme = () => {
+    if(theme === "light"){
+      localStorage.setItem('theme', "dark")
+      setTheme("dark");
+    }else{
+      localStorage.setItem('theme', "light")
+      setTheme("light");
+    }
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className={`${theme === "light" ? styles.light : styles.dark} ${styles.container}`}>
+      <header className={styles.header}>
+        <h1>State Management Comparison</h1>
+        <button onClick={toggleTheme}>
+          Switch to {theme === "light" ? 'Dark' : 'Light'} Mode
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      </header>
+      <StateManagementList/>
+    </div>
+  );
+};
 
-export default App
+export default App;
