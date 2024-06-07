@@ -1,4 +1,4 @@
-export type ThemeType = "light" | "dark" | null
+export type ThemeType = "light" | "dark"
 
 export interface ThemeStateType{
     theme: ThemeType;
