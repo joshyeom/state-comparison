@@ -1,8 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import {  useState } from 'react';
-import App from './components/App';
-import Props from './components/Props';
-import ContextAPI from './components/ContextAPI';
+import { App, ContextAPI, Props} from './components';
 import { ThemeType } from './types/ThemeStateType';
 import { ThemeContext } from './context/ThemeContext';
 

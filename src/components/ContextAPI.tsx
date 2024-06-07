@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import { ThemeContext } from "../context/ThemeContext"
 import { useContext } from "react"
 
-const ContextAPI= () => {
+const ContextAPI = () => {
     const context = useContext<ThemeStateType>(ThemeContext)
     const { theme } = context
 
