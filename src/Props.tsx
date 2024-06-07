@@ -1,9 +1,9 @@
-import { AppProps } from "./types/AppProps"
+import { ThemeStateType } from "./types/ThemeStateType"
 import { toggleTheme } from "./utils/toggleTheme"
 import styles from './App.module.css'
 import { Link } from "react-router-dom"
 
-const Props:React.FC<AppProps> = (props) => {
+const Props:React.FC<ThemeStateType> = (props) => {
     const {theme} = props
 
     return (

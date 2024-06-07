@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import styles from './App.module.css'
 import StateManagementList from './StateMangementList';
-import { AppProps } from './types/AppProps';
+import { ThemeStateType } from './types/ThemeStateType';
 
 
-const App: React.FC<AppProps> = ({theme, setTheme}) => {
+const App: React.FC<ThemeStateType> = ({theme, setTheme}) => {
 
   useEffect(() => {
     const modeValue = localStorage.getItem('theme')

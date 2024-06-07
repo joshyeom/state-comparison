@@ -1,6 +1,6 @@
-import { AppProps } from "../types/AppProps";
+import { ThemeStateType } from "../types/ThemeStateType";
 
-export const toggleTheme = ({theme, setTheme}: AppProps) => {
+export const toggleTheme = ({theme, setTheme}: ThemeStateType) => {
     if(theme === "light"){
       localStorage.setItem('theme', "dark")
       setTheme("dark");
