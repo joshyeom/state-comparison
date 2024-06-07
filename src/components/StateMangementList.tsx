@@ -1,4 +1,4 @@
-import styles from './App.module.css'
+import styles from '../public/App.module.css'
 import { Link } from 'react-router-dom'
 
 const StateManagementList = () => {

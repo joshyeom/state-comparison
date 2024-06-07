@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import styles from './App.module.css'
+import styles from "../public/App.module.css"
 import StateManagementList from './StateMangementList';
-import { ThemeStateType } from './types/ThemeStateType';
+import { ThemeStateType } from '../types/ThemeStateType';
 
 
 const App: React.FC<ThemeStateType> = ({theme, setTheme}) => {
