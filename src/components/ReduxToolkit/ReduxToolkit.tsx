@@ -3,9 +3,10 @@ import { Link } from "react-router-dom"
 import { initState, reduxToggleTheme } from "../../reduxStore/themeSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
+import { rootState } from "../../types/rootState"
 
 const ReduxToolkit = () => {
-  const { theme } = useSelector((state) => state.theme)
+  const { theme } = useSelector((state: rootState) => state.theme)
   const dispatch = useDispatch()  
 
   useEffect(() => {
@@ -16,7 +17,7 @@ const ReduxToolkit = () => {
     <div className={`${theme === "light" ? styles.light : styles.dark} ${styles.container}`}>
         <header className={styles.header}>
           <h1>This page is for Redux Toolkit</h1>
-          <button onClick={() => dispatch(reduxToggleTheme(theme))}>
+          <button onClick={() => dispatch(reduxToggleTheme())}>
             Switch to {theme === "light" ? 'Dark' : 'Light'} Mode
           </button>
         </header>
