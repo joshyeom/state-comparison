@@ -11,7 +11,6 @@ const Home = () => {
   });
 
 
-
   const toggleTheme = () => {
     if(theme === "light"){
       localStorage.setItem('theme', "dark")
@@ -22,6 +21,7 @@ const Home = () => {
     }
   };
 
+  
   return (
     <div className={`${theme === "light" ? styles.light : styles.dark} ${styles.container}`}>
       <header className={styles.header}>

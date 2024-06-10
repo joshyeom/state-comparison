@@ -19,7 +19,9 @@ const StateManagementList = () => {
             </Link>
           </li>
           <li>
-            <button>Redux</button>
+          <Link to="/reduxtoolkit">
+                <button>Redux Toolkit</button>
+          </Link>
           </li>
           <li>
             <button>Zustand</button>
