@@ -24,7 +24,9 @@ const StateManagementList = () => {
           </Link>
           </li>
           <li>
-            <button>Zustand</button>
+          <Link to="/zustand">
+                <button>Zustand</button>
+          </Link>
           </li>
           <li>
             <button>Recoil</button>

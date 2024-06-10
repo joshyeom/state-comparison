@@ -1,6 +1,6 @@
 import styles from "../../public/App.module.css"
 import { Link } from "react-router-dom"
-import { initState, reduxToggleTheme } from "../../reduxStore/themeSlice"
+import { initState, reduxToggleTheme } from "../../store/reduxStore/themeSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { rootState } from "../../types/rootState"
