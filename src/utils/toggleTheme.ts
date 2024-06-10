@@ -1,4 +1,4 @@
-import { ThemeStateType } from "../types/ThemeStateType";
+import { ThemeStateType } from "../types/types";
 
 export const toggleTheme = ({theme, setTheme}: ThemeStateType) => {
     if(theme === "light"){

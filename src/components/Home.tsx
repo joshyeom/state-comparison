@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
+import { useState } from 'react';
+import { ThemeType } from '../types/types';
 import styles from "../public/App.module.css"
 import StateManagementList from './StateMangementList';
-import { ThemeStateType } from '../types/ThemeStateType';
 
 
-const App: React.FC<ThemeStateType> = ({theme, setTheme}) => {
+const Home = () => {
+  const [theme, setTheme] = useState<ThemeType>(() => {
+    const themeStorage = localStorage.getItem("theme");
+    return themeStorage === "dark" ? "dark" : "light";
+  });
 
-  useEffect(() => {
-    const modeValue = localStorage.getItem('theme')
-    if(modeValue === "dark"){
-      setTheme("dark")
-    }
-  })
 
 
   const toggleTheme = () => {
@@ -37,4 +35,4 @@ const App: React.FC<ThemeStateType> = ({theme, setTheme}) => {
   );
 };
 
-export default App;
+export default Home;

@@ -1,3 +1,4 @@
-export { default as App } from './App';
-export { default as ContextAPI } from './ContextAPI';
-export { default as Props } from './Props';
+export { default as Home } from './Home';
+export { default as ContextAPIState } from '../components/ContextAPI/ContextAPIState';
+export { default as PropsState } from '../components/Props/PropsState';
+export { default as ReduxToolkitState } from '../components/ReduxToolkit/ReduxToolkitState'
