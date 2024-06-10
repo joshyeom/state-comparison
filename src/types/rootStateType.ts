@@ -1,4 +1,4 @@
-export interface rootState {
+export interface rootStateType {
     theme: {
       theme: string;
     };

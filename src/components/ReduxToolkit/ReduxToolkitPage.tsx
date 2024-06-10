@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 import { initState, reduxToggleTheme } from "../../store/reduxStore/themeSlice"
 import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
-import { rootState } from "../../types/rootState"
+import { rootStateType } from "../../types/rootStateType"
 
 const ReduxToolkitPage = () => {
-  const { theme } = useSelector((state: rootState) => state.theme)
+  const { theme } = useSelector((state: rootStateType) => state.theme)
   const dispatch = useDispatch()  
 
   useEffect(() => {
