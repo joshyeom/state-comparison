@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, PropsState, ContextAPIState, ReduxToolkitState, ZustandState } from './components/index';
+import { Home, PropsStatePage, ContextAPIStatePage, ReduxToolkitStatePage, ZustandStatePage } from './components/index';
 import ContextAPI from './components/ContextAPI/ContextAPI';
 
 const Router = () => {
@@ -7,14 +7,14 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
               <Route path="/" element={<Home/>}/>
-              <Route path="/props" element={<PropsState/>}/>
+              <Route path="/props" element={<PropsStatePage/>}/>
               <Route path="/contextapi" element={
-                <ContextAPIState>
+                <ContextAPIStatePage>
                   <ContextAPI/>
-                </ContextAPIState>
+                </ContextAPIStatePage>
               }/>
-              <Route path="/reduxtoolkit" element={<ReduxToolkitState/>}/>
-              <Route path="/zustand" element={<ZustandState/>}/>
+              <Route path="/reduxtoolkit" element={<ReduxToolkitStatePage/>}/>
+              <Route path="/zustand" element={<ZustandStatePage/>}/>
             </Routes>
         </BrowserRouter>
     );

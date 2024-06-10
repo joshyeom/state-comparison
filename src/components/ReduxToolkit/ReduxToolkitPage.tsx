@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { useEffect } from "react"
 import { rootState } from "../../types/rootState"
 
-const ReduxToolkit = () => {
+const ReduxToolkitPage = () => {
   const { theme } = useSelector((state: rootState) => state.theme)
   const dispatch = useDispatch()  
 
@@ -30,4 +30,4 @@ const ReduxToolkit = () => {
     )
 }
 
-export default ReduxToolkit
+export default ReduxToolkitPage

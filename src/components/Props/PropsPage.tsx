@@ -3,7 +3,7 @@ import { toggleTheme } from "../../utils/toggleTheme"
 import styles from "../../public/App.module.css"
 import { Link } from "react-router-dom"
 
-const Props:React.FC<ThemeStateType> = (props) => {
+const PropsPage:React.FC<ThemeStateType> = (props) => {
     const {theme} = props
 
     return (
@@ -23,4 +23,4 @@ const Props:React.FC<ThemeStateType> = (props) => {
     )
 }
 
-export default Props
+export default PropsPage

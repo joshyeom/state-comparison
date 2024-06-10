@@ -2,6 +2,8 @@ import { create } from "zustand";
 
 interface types{
     theme: "light" | "dark"
+    toggleTheme: () => void
+    initState: () => void
 }
 
 export const useStore = create<types>((set) => ({

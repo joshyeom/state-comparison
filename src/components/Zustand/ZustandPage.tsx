@@ -3,7 +3,7 @@ import styles from '../../public/App.module.css'
 import { useStore } from '../../store/zustandStore/store'
 import { Link } from 'react-router-dom';
 
-const Zustand= () => {
+const ZustandPage = () => {
     const { theme, toggleTheme, initState } = useStore(state => ({ theme: state.theme, toggleTheme: state.toggleTheme, initState: state.initState }));
 
     useEffect(() => {
@@ -28,4 +28,4 @@ const Zustand= () => {
     )
 }
 
-export default Zustand
+export default ZustandPage

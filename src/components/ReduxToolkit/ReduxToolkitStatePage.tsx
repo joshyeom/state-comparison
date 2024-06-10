@@ -1,13 +1,13 @@
-import ReduxToolkit from "./ReduxToolkit";
+import ReduxToolkitPage from "./ReduxToolkitPage";
 import { Provider } from "react-redux";
 import store from "../../store/reduxStore/store";
 
-const ReduxTookitState = () => {
+const ReduxTookitStatePage = () => {
     return (
     <Provider store={store}>
-        <ReduxToolkit/>
+        <ReduxToolkitPage/>
     </Provider>
     )
 }
 
-export default ReduxTookitState
+export default ReduxTookitStatePage
