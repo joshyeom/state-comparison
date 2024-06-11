@@ -29,7 +29,9 @@ const StateManagementList = () => {
           </Link>
           </li>
           <li>
-            <button>Recoil</button>
+            <Link to="/recoil">
+              <button>Recoil</button>
+            </Link>
           </li>
           <li>
             <button>Jotai</button>

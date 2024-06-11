@@ -3,3 +3,4 @@ export { default as ContextAPIStatePage } from '../components/ContextAPI/Context
 export { default as PropsStatePage } from './Props/PropsStatePage';
 export { default as ReduxToolkitStatePage } from './ReduxToolkit/ReduxToolkitStatePage'
 export { default as ZustandStatePage } from './Zustand/ZustandStatePage'
+export { default as RecoilStatePage } from './Recoil/RecoilStatePage'
