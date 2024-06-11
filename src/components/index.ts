@@ -4,3 +4,4 @@ export { default as PropsStatePage } from './Props/PropsStatePage';
 export { default as ReduxToolkitStatePage } from './ReduxToolkit/ReduxToolkitStatePage'
 export { default as ZustandStatePage } from './Zustand/ZustandStatePage'
 export { default as RecoilStatePage } from './Recoil/RecoilStatePage'
+export { default as JotaiStatePage } from './Jotai/JotaiStatePage'
