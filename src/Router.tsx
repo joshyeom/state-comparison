@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home, PropsStatePage, ContextAPIStatePage, ReduxToolkitStatePage, ZustandStatePage, RecoilStatePage, JotaiStatePage, MobXStatePage } from './components/index';
+import { Home, PropsStatePage, ContextAPIStatePage, ReduxToolkitStatePage, ZustandStatePage, RecoilStatePage, JotaiStatePage, MobXStatePage, ValtioStatePage } from './components/index';
 import ContextAPI from './components/ContextAPI/ContextAPI';
 
 const Router = () => {
@@ -18,6 +18,7 @@ const Router = () => {
               <Route path="/recoil" element={<RecoilStatePage/>}/>
               <Route path="/jotai" element={<JotaiStatePage/>}/>
               <Route path="/mobx" element={<MobXStatePage/>}/>
+              <Route path="/valtio" element={<ValtioStatePage/>}/>
             </Routes>
         </BrowserRouter>
     );

@@ -44,7 +44,9 @@ const StateManagementList = () => {
             </Link>
           </li>
           <li>
-            <button>Valtio</button>
+            <Link to="/valtio">
+                <button>Valtio</button>
+            </Link>
           </li>
           <li>
             <button>Tanstack-Query</button>
