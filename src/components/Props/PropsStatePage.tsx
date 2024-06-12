@@ -9,7 +9,7 @@ const PropsStatePage = () => {
         const themeStorage = localStorage.getItem("theme");
         return themeStorage === "dark" ? "dark" : "light";
       });
-
+    
     return <PropsPage theme={theme} setTheme={setTheme}/>
 }
 

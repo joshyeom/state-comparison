@@ -1,16 +1,21 @@
 import { ThemeStateType } from "../../types/types"
-import { toggleTheme } from "../../utils/toggleTheme"
 import styles from "../../public/App.module.css"
 import { Link } from "react-router-dom"
 
 const PropsPage:React.FC<ThemeStateType> = (props) => {
-    const {theme} = props
+    const { theme, setTheme } = props
+
+    const toggleTheme = () => {
+      const newTheme = theme === "light" ? "dark" : "light"
+      setTheme(newTheme)
+    }
+
 
     return (
     <div className={`${theme === "light" ? styles.light : styles.dark} ${styles.container}`}>
         <header className={styles.header}>
           <h1>This page is for Props</h1>
-          <button onClick={() => toggleTheme(props)}>
+          <button onClick={toggleTheme}>
             Switch to {theme === "light" ? 'Dark' : 'Light'} Mode
           </button>
         </header>
