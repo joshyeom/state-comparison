@@ -34,12 +34,14 @@ const StateManagementList = () => {
             </Link>
           </li>
           <li>
-          <Link to="/jotai">
-              <button>Jotai</button>
+            <Link to="/jotai">
+                <button>Jotai</button>
             </Link>
           </li>
           <li>
-            <button>MobX</button>
+            <Link to="/mobx">
+                <button>MobX</button>
+            </Link>
           </li>
           <li>
             <button>Valtio</button>

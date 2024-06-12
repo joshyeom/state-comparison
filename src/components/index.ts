@@ -5,3 +5,4 @@ export { default as ReduxToolkitStatePage } from './ReduxToolkit/ReduxToolkitSta
 export { default as ZustandStatePage } from './Zustand/ZustandStatePage'
 export { default as RecoilStatePage } from './Recoil/RecoilStatePage'
 export { default as JotaiStatePage } from './Jotai/JotaiStatePage'
+export { default as MobXStatePage } from './MobX/MobXStatePage'
