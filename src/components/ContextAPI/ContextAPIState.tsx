@@ -9,8 +9,8 @@ const ContextAPIState = ({children}: {children: ReactNode}) => {
         return themeStorage === "dark" ? "dark" : "light";
     });
 
-    const toggleTheme = (currentTheme: ThemeType) => {
-        const newTheme = currentTheme === "dark" ? "light" : "dark";
+    const toggleTheme = (): void => {
+        const newTheme = theme === "dark" ? "light" : "dark";
         setTheme(newTheme);
         localStorage.setItem('theme', newTheme)
     };

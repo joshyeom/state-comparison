@@ -7,5 +7,5 @@ export interface ThemeStateType{
 
 export interface ContextAPIType{
     theme: ThemeType
-    toggleTheme: (theme: ThemeType) => void;
+    toggleTheme: () => void;
 }
