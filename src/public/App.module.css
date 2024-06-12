@@ -56,3 +56,78 @@
   li{
     list-style: none;
   }
+
+
+  /* App.module.css */
+
+.buttonProps {
+  background-color: #3498db; /* Props 버튼의 기본 배경색 */
+  color: #ffffff; /* Props 버튼의 기본 텍스트 색상 */
+}
+
+.buttonProps:hover {
+  background-color: #2980b9; /* Props 버튼의 hover 배경색 */
+}
+
+.buttonContextApi {
+  background-color: #2ecc71; /* Context API 버튼의 기본 배경색 */
+  color: #ffffff; /* Context API 버튼의 기본 텍스트 색상 */
+}
+
+.buttonContextApi:hover {
+  background-color: #27ae60; /* Context API 버튼의 hover 배경색 */
+}
+
+.buttonReduxToolkit {
+  background-color: #9b59b6; /* Redux Toolkit 버튼의 기본 배경색 */
+  color: #ffffff; /* Redux Toolkit 버튼의 기본 텍스트 색상 */
+}
+
+.buttonReduxToolkit:hover {
+  background-color: #8e44ad; /* Redux Toolkit 버튼의 hover 배경색 */
+}
+
+.buttonZustand {
+  background-color: #f39c12; /* Zustand 버튼의 기본 배경색 */
+  color: #ffffff; /* Zustand 버튼의 기본 텍스트 색상 */
+}
+
+.buttonZustand:hover {
+  background-color: #d35400; /* Zustand 버튼의 hover 배경색 */
+}
+
+.buttonRecoil {
+  background-color: #34495e; /* Recoil 버튼의 기본 배경색 */
+  color: #ffffff; /* Recoil 버튼의 기본 텍스트 색상 */
+}
+
+.buttonRecoil:hover {
+  background-color: #2c3e50; /* Recoil 버튼의 hover 배경색 */
+}
+
+.buttonJotai {
+  background-color: #3498db; /* Jotai 버튼의 기본 배경색 */
+  color: #ffffff; /* Jotai 버튼의 기본 텍스트 색상 */
+}
+
+.buttonJotai:hover {
+  background-color: #2980b9; /* Jotai 버튼의 hover 배경색 */
+}
+
+.buttonMobx {
+  background-color: #2ecc71; /* MobX 버튼의 기본 배경색 */
+  color: #ffffff; /* MobX 버튼의 기본 텍스트 색상 */
+}
+
+.buttonMobx:hover {
+  background-color: #27ae60; /* MobX 버튼의 hover 배경색 */
+}
+
+.buttonValtio {
+  background-color: #f39c12; /* Valtio 버튼의 기본 배경색 */
+  color: #ffffff; /* Valtio 버튼의 기본 텍스트 색상 */
+}
+
+.buttonValtio:hover {
+  background-color: #d35400; /* Valtio 버튼의 hover 배경색 */
+}

@@ -1,3 +1,4 @@
+// StateManagementList.js
 import styles from '../public/App.module.css'
 import { Link } from 'react-router-dom'
 
@@ -10,46 +11,43 @@ const StateManagementList = () => {
         <ol>
           <li>
             <Link to="/props">
-                <button>Props</button>
+                <button className={styles.buttonProps}>Props</button>
             </Link>
           </li>
           <li>
             <Link to="/contextapi">
-                <button>Context API</button>
+                <button className={styles.buttonContextApi}>Context API</button>
             </Link>
           </li>
           <li>
           <Link to="/reduxtoolkit">
-                <button>Redux Toolkit</button>
+                <button className={styles.buttonReduxToolkit}>Redux Toolkit</button>
           </Link>
           </li>
           <li>
           <Link to="/zustand">
-                <button>Zustand</button>
+                <button className={styles.buttonZustand}>Zustand</button>
           </Link>
           </li>
           <li>
             <Link to="/recoil">
-              <button>Recoil</button>
+              <button className={styles.buttonRecoil}>Recoil</button>
             </Link>
           </li>
           <li>
             <Link to="/jotai">
-                <button>Jotai</button>
+                <button className={styles.buttonJotai}>Jotai</button>
             </Link>
           </li>
           <li>
             <Link to="/mobx">
-                <button>MobX</button>
+                <button className={styles.buttonMobx}>MobX</button>
             </Link>
           </li>
           <li>
             <Link to="/valtio">
-                <button>Valtio</button>
+                <button className={styles.buttonValtio}>Valtio</button>
             </Link>
-          </li>
-          <li>
-            <button>Tanstack-Query</button>
           </li>
         </ol>
       </main>
