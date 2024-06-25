@@ -8,6 +8,7 @@ const PropsPage:React.FC<ThemeStateType> = (props) => {
     const toggleTheme = () => {
       const newTheme = theme === "light" ? "dark" : "light"
       setTheme(newTheme)
+      localStorage.setItem("theme", newTheme)
     }
 
 
